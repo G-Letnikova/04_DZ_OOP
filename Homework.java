@@ -107,7 +107,7 @@ class Box<T extends Fruit>{
     public boolean compare(Box<? extends Fruit> box){
         return this.getWeight() == box.getWeight();
     }
-    public void moveTo(Box<? super T> box){
+    public void moveTo(Box<T> box){
         box.fruits.addAll(this.fruits);
         fruits.clear();
     }
