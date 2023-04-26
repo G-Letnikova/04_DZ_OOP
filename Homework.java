@@ -99,7 +99,7 @@ class Box<T extends Fruit>{
         if (fruits.size() == 0) return 0;
         return fruits.get(0).getWeight() * fruits.size();
     }
-    }
+    
     public void addFruit(T fruict){
         this.fruits.add(fruict);
 
